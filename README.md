@@ -4,6 +4,8 @@ This repository contains a pre-commit hook that allows you to automate the forma
 
 It also includes a hook that runs `dataform compile` before each commit to ensure that your Dataform project compiles successfully.
 
+Alternatively you can use the dry run hook to run `dataform run --dry-run` to ensure the project compiles successfully and produces valid, executable SQL.
+
 ### How to Use
 
 ```
@@ -12,4 +14,5 @@ It also includes a hook that runs `dataform compile` before each commit to ensur
   hooks:
     - id: dataform_format
     - id: dataform_compile
+    - id: dataform_dry_run
 ```
