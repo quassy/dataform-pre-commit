@@ -11,3 +11,10 @@
     language: script
     files: (\.sqlx|\.js)$
     pass_filenames: false
+
+-   id: dataform_dry_run
+    name: Dataform dry run
+    entry: hooks/dataform_dry_run.sh
+    language: script
+    files: (\.sqlx|\.js)$
+    pass_filenames: false
